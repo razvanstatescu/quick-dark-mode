@@ -1,0 +1,56 @@
+/* Basic website style */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    background-color: #e7e7e7;
+    padding: 6rem 3rem;
+}
+
+.top h1 {
+    text-align: center;
+    color: black;
+}
+
+.content {
+    padding: 3rem;
+    color: #303030;
+}
+
+.content img {
+    max-height: 350px;
+    width: auto;
+}
+
+/* End Basic website style */
+
+html.dark {
+    filter: invert(100%);
+}
+
+html.dark img {
+    filter: invert(100%);
+}
+
+.theme-toggle {
+    position: fixed;
+    left: 32px;
+    bottom: 32px;
+}
+
+.theme-toggle .toggle-button {
+    height: 50px;
+    width: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+html.light .theme-toggle .toggle-button.light {
+    display: block;
+}
+
+html.dark .theme-toggle .toggle-button.dark {
+    display: block;
+}
